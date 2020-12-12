@@ -182,7 +182,6 @@ int main() {
       unitX /= 10;
     }
     if (unitX < diffX / 10) {
-      printf("unitX = %f\n", unitX);
       if (unitX * 2 >= diffX / 10) {
         unitX *= 2;
         break;
@@ -264,14 +263,6 @@ int main() {
   graph.unitY = unitY;
   graph.unitSizeX = unitSizeX;
   graph.unitSizeY = unitSizeY;
-
-  printf("centerX = %d, centerY = %d, unitX = %f, unitY = %f, usizeX = %f, usizeY = %f\n",
-         graph.centerX,
-         graph.centerY,
-         graph.unitX,
-         graph.unitY,
-         unitSizeX,
-         unitSizeY);
 
   clearBuffer(&graph);
   drawAxes(&graph);
