@@ -6,7 +6,7 @@ double abs_value(double x) {
   return x > 0 ? x : -x;
 }
 
-int fac(n) {
+int fac(int n) {
   if (n <= 0) return 1;
   return fac(n - 1) * n;
 }
