@@ -11,6 +11,7 @@ file(GLOB APP_SOURCES RELATIVE ${PROJECT_SOURCE_DIR}
         pr3_16/*.c
         lab1/*.c
         lab6/*.c
+        lab8/*.c
         final_1/*.c
         final_3/*.c
         final_16/*.c)
