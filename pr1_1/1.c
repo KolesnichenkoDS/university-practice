@@ -3,18 +3,21 @@
 
 int main() {
   double a, b, c;
+  printf("Введите коэффициент a: ");
   scanf("%lf", &a);
+  printf("Введите коэффициент b: ");
   scanf("%lf", &b);
+  printf("Введите коэффициент c: ");
   scanf("%lf", &c);
 
   if (a == 0) {
     if (b == 0 && c == 0) {
-      printf("x is any complex number\n");
+      printf("x — любое комплексное число\n");
       return 0;
     }
 
     if (b == 0 && c != 0) {
-      printf("\n");
+      printf("нет корней\n");
       return 0;
     }
 
