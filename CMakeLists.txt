@@ -4,11 +4,13 @@ project(University C)
 set(CMAKE_C_STANDARD 11)
 
 file(GLOB APP_SOURCES RELATIVE ${PROJECT_SOURCE_DIR}
-        pr1/*.c
-        pr2/*.c
-        pr3/*.c
+        pr1_1/*.c
+        pr2_1/*.c
+        pr3_1/*.c
+        pr3_3/*.c
+        pr3_16/*.c
         lab1/*.c
-        final/*.c)
+        final_1/*.c)
 foreach (sourcefile ${APP_SOURCES})
     message(${sourcefile})
     string(REPLACE ".c" "" name ${sourcefile})
