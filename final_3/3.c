@@ -74,18 +74,18 @@ void drawAxes(Graph *graph) {
         }
       }
     }
-//    if (x2 < graph->sizeX) {
-//      graph->buffer[graph->centerY][(int) x2] = '+';
-//      char xs[100];
-//      xs[0] = '\0';
-//      sprintf(xs, " %.2f", x);
-//      if ((int) x2 > strlen(xs) / 2 &&
-//          (int) x2 + strlen(xs) / 2 < graph->sizeX && (int) x2 != graph->centerX) {
-//        for (int i = 0; i < strlen(xs); i++) {
-//          graph->buffer[graph->centerY - 1][(int) x2 + i - strlen(xs) / 2] = xs[i];
-//        }
-//      }
-//    }
+    if (x2 < graph->sizeX) {
+      set(graph, graph->centerY, (int) x2, '+');
+      char xs[100];
+      xs[0] = '\0';
+      sprintf(xs, " %.2f", x);
+      if ((int) x2 > strlen(xs) / 2 &&
+          (int) x2 + strlen(xs) / 2 < graph->sizeX && (int) x2 != graph->centerX) {
+        for (int i = 0; i < strlen(xs); i++) {
+          set(graph, graph->centerY - 1, (int) x2 + i - strlen(xs) / 2, xs[i]);
+        }
+      }
+    }
   }
 
   for (double y = 0, yy = 0; yy < graph->sizeY; y += graph->unitY, yy += graph->unitSizeY) {
