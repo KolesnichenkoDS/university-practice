@@ -73,9 +73,9 @@ int main() {
   }
 
   if (has_path(v, 1, n)) {
-    printf("has path from pr1 to %d", n);
+    printf("Path from point 1 to pint %d exists\n", n);
   } else {
-    printf("doesn't have path from pr1 to %d", n);
+    printf("Path from point 1 to pint %d doesn't exist\n", n);
   }
 
   vec_destroy(v);
