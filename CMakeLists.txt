@@ -16,7 +16,8 @@ file(GLOB APP_SOURCES RELATIVE ${PROJECT_SOURCE_DIR}
         lab8/*.c
         final_1/*.c
         final_3/*.c
-        final_16/*.c)
+        final_16/*.c
+        test/*.c)
 foreach (sourcefile ${APP_SOURCES})
     message(${sourcefile})
     string(REPLACE ".c" "" name ${sourcefile})
